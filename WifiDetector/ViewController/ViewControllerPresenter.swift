@@ -12,15 +12,17 @@ class ViewControllerPresenter: NSObject {
     private var viewmodel: ViewModel
     private var wifiInfoProvider: WifiInfoProviding
     private var locationManager: LocationInfoManaging
+    private var locationManagerDelegate: CLLocationManagerDelegate
     
     private var currentLocationPermissionCallback: (() -> Void)?
     
-    init(wifiInfoProvider: WifiInfoProviding, model: ViewModel = ViewModel(), locationManager: LocationInfoManaging = CLLocationManager()) {
+    init(wifiInfoProvider: WifiInfoProviding, model: ViewModel = ViewModel(), locationManager: LocationInfoManaging = CLLocationManager(), locationManagerDelegate: CLLocationManagerDelegate = LocationPermissionDelegate()) {
         self.viewmodel = model
         self.wifiInfoProvider = wifiInfoProvider
         self.locationManager = locationManager
+        self.locationManagerDelegate = locationManagerDelegate
         super.init()
-        self.locationManager.delegate = self
+        self.locationManager.delegate = locationManagerDelegate
         self.updateLocationPermissionState(status: locationManager.getAuthorizationStatus())
     }
     
@@ -98,19 +100,11 @@ class ViewControllerPresenter: NSObject {
     }
 }
 
-extension ViewControllerPresenter: CLLocationManagerDelegate {
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        updateLocationPermissionState(status: manager.authorizationStatus)
-        if let callback = currentLocationPermissionCallback {
-            callback()
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+extension ViewControllerPresenter: LocationPermissionDelegating {
+    func permissionStatusReturned(_ status: CLAuthorizationStatus) {
         updateLocationPermissionState(status: status)
         if let callback = currentLocationPermissionCallback {
             callback()
         }
     }
-    
 }

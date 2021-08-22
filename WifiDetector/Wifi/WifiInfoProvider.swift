@@ -22,9 +22,3 @@ struct WifiInfoProvider: WifiInfoProviding {
         return ssid
     }
 }
-
-struct MockInfoProvider: WifiInfoProviding {
-    func getSSID() -> String? {
-        return "Sani"
-    }
-}

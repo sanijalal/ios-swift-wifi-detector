@@ -25,7 +25,23 @@
 		22879E6226D1F17E00682651 /* AuthorisedWithSSIDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E6126D1F17E00682651 /* AuthorisedWithSSIDView.xib */; };
 		22879E6426D1F38F00682651 /* AuthorisedWithSSIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E6326D1F38F00682651 /* AuthorisedWithSSIDView.swift */; };
 		22879E6626D1FD5F00682651 /* UnknownPermissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E6526D1FD5F00682651 /* UnknownPermissionView.xib */; };
+		22879E7626D2204000682651 /* ViewControllerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7526D2204000682651 /* ViewControllerPresenterTests.swift */; };
+		22879E7826D2224000682651 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7726D2224000682651 /* MockLocationManager.swift */; };
+		22879E7A26D2280C00682651 /* LocationPermissionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7926D2280C00682651 /* LocationPermissionDelegate.swift */; };
+		22879E7C26D2282500682651 /* LocationPermissionDelegating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7B26D2282500682651 /* LocationPermissionDelegating.swift */; };
+		22879E7E26D22C8100682651 /* MockWifiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7D26D22C8100682651 /* MockWifiProvider.swift */; };
+		22879E8026D22D0000682651 /* MockLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7F26D22D0000682651 /* MockLocationManagerDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22879E7026D21FEF00682651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22879E2326D0B46A00682651 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22879E2A26D0B46A00682651;
+			remoteInfo = WifiDetector;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22879E2B26D0B46A00682651 /* WifiDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WifiDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,10 +64,25 @@
 		22879E6126D1F17E00682651 /* AuthorisedWithSSIDView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorisedWithSSIDView.xib; sourceTree = "<group>"; };
 		22879E6326D1F38F00682651 /* AuthorisedWithSSIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorisedWithSSIDView.swift; sourceTree = "<group>"; };
 		22879E6526D1FD5F00682651 /* UnknownPermissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnknownPermissionView.xib; sourceTree = "<group>"; };
+		22879E6B26D21FEF00682651 /* WifiDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WifiDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22879E6F26D21FEF00682651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22879E7526D2204000682651 /* ViewControllerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenterTests.swift; sourceTree = "<group>"; };
+		22879E7726D2224000682651 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
+		22879E7926D2280C00682651 /* LocationPermissionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionDelegate.swift; sourceTree = "<group>"; };
+		22879E7B26D2282500682651 /* LocationPermissionDelegating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionDelegating.swift; sourceTree = "<group>"; };
+		22879E7D26D22C8100682651 /* MockWifiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWifiProvider.swift; sourceTree = "<group>"; };
+		22879E7F26D22D0000682651 /* MockLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManagerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		22879E2826D0B46A00682651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22879E6826D21FEF00682651 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				22879E2D26D0B46A00682651 /* WifiDetector */,
+				22879E6C26D21FEF00682651 /* WifiDetectorTests */,
 				22879E2C26D0B46A00682651 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				22879E2B26D0B46A00682651 /* WifiDetector.app */,
+				22879E6B26D21FEF00682651 /* WifiDetectorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +140,8 @@
 			children = (
 				22879E4D26D115ED00682651 /* LocationInfoManaging.swift */,
 				22879E4F26D1190200682651 /* LocationManagerExtension.swift */,
+				22879E7926D2280C00682651 /* LocationPermissionDelegate.swift */,
+				22879E7B26D2282500682651 /* LocationPermissionDelegating.swift */,
 			);
 			path = LocationPermissionProvider;
 			sourceTree = "<group>";
@@ -135,6 +170,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		22879E6C26D21FEF00682651 /* WifiDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				22879E6F26D21FEF00682651 /* Info.plist */,
+				22879E7526D2204000682651 /* ViewControllerPresenterTests.swift */,
+				22879E7726D2224000682651 /* MockLocationManager.swift */,
+				22879E7D26D22C8100682651 /* MockWifiProvider.swift */,
+				22879E7F26D22D0000682651 /* MockLocationManagerDelegate.swift */,
+			);
+			path = WifiDetectorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +202,24 @@
 			productReference = 22879E2B26D0B46A00682651 /* WifiDetector.app */;
 			productType = "com.apple.product-type.application";
 		};
+		22879E6A26D21FEF00682651 /* WifiDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22879E7226D21FEF00682651 /* Build configuration list for PBXNativeTarget "WifiDetectorTests" */;
+			buildPhases = (
+				22879E6726D21FEF00682651 /* Sources */,
+				22879E6826D21FEF00682651 /* Frameworks */,
+				22879E6926D21FEF00682651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22879E7126D21FEF00682651 /* PBXTargetDependency */,
+			);
+			name = WifiDetectorTests;
+			productName = WifiDetectorTests;
+			productReference = 22879E6B26D21FEF00682651 /* WifiDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +231,10 @@
 				TargetAttributes = {
 					22879E2A26D0B46A00682651 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					22879E6A26D21FEF00682651 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 22879E2A26D0B46A00682651;
 					};
 				};
 			};
@@ -183,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				22879E2A26D0B46A00682651 /* WifiDetector */,
+				22879E6A26D21FEF00682651 /* WifiDetectorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +272,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22879E6926D21FEF00682651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,8 +290,10 @@
 				22879E3326D0B46A00682651 /* ViewController.swift in Sources */,
 				22879E6426D1F38F00682651 /* AuthorisedWithSSIDView.swift in Sources */,
 				22879E2F26D0B46A00682651 /* AppDelegate.swift in Sources */,
+				22879E7A26D2280C00682651 /* LocationPermissionDelegate.swift in Sources */,
 				22879E3126D0B46A00682651 /* SceneDelegate.swift in Sources */,
 				22879E4926D1134300682651 /* ViewControllerPresenter.swift in Sources */,
+				22879E7C26D2282500682651 /* LocationPermissionDelegating.swift in Sources */,
 				22879E5326D123D600682651 /* LocationPermissionState.swift in Sources */,
 				22879E4E26D115ED00682651 /* LocationInfoManaging.swift in Sources */,
 				22879E4726D0D33300682651 /* WifiInfoProviding.swift in Sources */,
@@ -223,7 +302,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22879E6726D21FEF00682651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22879E7E26D22C8100682651 /* MockWifiProvider.swift in Sources */,
+				22879E7826D2224000682651 /* MockLocationManager.swift in Sources */,
+				22879E7626D2204000682651 /* ViewControllerPresenterTests.swift in Sources */,
+				22879E8026D22D0000682651 /* MockLocationManagerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22879E7126D21FEF00682651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22879E2A26D0B46A00682651 /* WifiDetector */;
+			targetProxy = 22879E7026D21FEF00682651 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22879E3426D0B46A00682651 /* Main.storyboard */ = {
@@ -401,6 +499,44 @@
 			};
 			name = Release;
 		};
+		22879E7326D21FEF00682651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WifiDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdsani.WifiDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WifiDetector.app/WifiDetector";
+			};
+			name = Debug;
+		};
+		22879E7426D21FEF00682651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WifiDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdsani.WifiDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WifiDetector.app/WifiDetector";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -418,6 +554,15 @@
 			buildConfigurations = (
 				22879E4026D0B46B00682651 /* Debug */,
 				22879E4126D0B46B00682651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22879E7226D21FEF00682651 /* Build configuration list for PBXNativeTarget "WifiDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22879E7326D21FEF00682651 /* Debug */,
+				22879E7426D21FEF00682651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

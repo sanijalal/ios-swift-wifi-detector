@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="457" height="240"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiley" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yi3-oO-qwr">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yi3-oO-qwr">
                     <rect key="frame" x="20" y="20.5" width="417" height="99"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="9Rz-Lq-2fY"/>
@@ -44,7 +44,7 @@
         </view>
     </objects>
     <resources>
-        <image name="smiley" catalog="system" width="128" height="121"/>
+        <image name="face.smiling" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

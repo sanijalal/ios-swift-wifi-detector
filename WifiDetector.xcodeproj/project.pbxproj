@@ -18,7 +18,6 @@
 		22879E4926D1134300682651 /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4826D1134300682651 /* ViewControllerPresenter.swift */; };
 		22879E4B26D1136F00682651 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4A26D1136F00682651 /* ViewModel.swift */; };
 		22879E4E26D115ED00682651 /* LocationInfoManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4D26D115ED00682651 /* LocationInfoManaging.swift */; };
-		22879E5026D1190200682651 /* LocationManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4F26D1190200682651 /* LocationManagerExtension.swift */; };
 		22879E5326D123D600682651 /* LocationPermissionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E5226D123D600682651 /* LocationPermissionState.swift */; };
 		22879E5E26D1E94600682651 /* DeniedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E5D26D1E94600682651 /* DeniedView.xib */; };
 		22879E6026D1EFCB00682651 /* AuthorisedNoSSID.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E5F26D1EFCB00682651 /* AuthorisedNoSSID.xib */; };
@@ -27,10 +26,10 @@
 		22879E6626D1FD5F00682651 /* UnknownPermissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E6526D1FD5F00682651 /* UnknownPermissionView.xib */; };
 		22879E7626D2204000682651 /* ViewControllerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7526D2204000682651 /* ViewControllerPresenterTests.swift */; };
 		22879E7826D2224000682651 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7726D2224000682651 /* MockLocationManager.swift */; };
-		22879E7A26D2280C00682651 /* LocationPermissionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7926D2280C00682651 /* LocationPermissionDelegate.swift */; };
 		22879E7C26D2282500682651 /* LocationPermissionDelegating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7B26D2282500682651 /* LocationPermissionDelegating.swift */; };
 		22879E7E26D22C8100682651 /* MockWifiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7D26D22C8100682651 /* MockWifiProvider.swift */; };
 		22879E8026D22D0000682651 /* MockLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E7F26D22D0000682651 /* MockLocationManagerDelegate.swift */; };
+		22879E8226D2A82200682651 /* LocationInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E8126D2A82200682651 /* LocationInfoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		22879E4826D1134300682651 /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
 		22879E4A26D1136F00682651 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		22879E4D26D115ED00682651 /* LocationInfoManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoManaging.swift; sourceTree = "<group>"; };
-		22879E4F26D1190200682651 /* LocationManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerExtension.swift; sourceTree = "<group>"; };
 		22879E5226D123D600682651 /* LocationPermissionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionState.swift; sourceTree = "<group>"; };
 		22879E5D26D1E94600682651 /* DeniedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeniedView.xib; sourceTree = "<group>"; };
 		22879E5F26D1EFCB00682651 /* AuthorisedNoSSID.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorisedNoSSID.xib; sourceTree = "<group>"; };
@@ -68,10 +66,10 @@
 		22879E6F26D21FEF00682651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22879E7526D2204000682651 /* ViewControllerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenterTests.swift; sourceTree = "<group>"; };
 		22879E7726D2224000682651 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
-		22879E7926D2280C00682651 /* LocationPermissionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionDelegate.swift; sourceTree = "<group>"; };
 		22879E7B26D2282500682651 /* LocationPermissionDelegating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionDelegating.swift; sourceTree = "<group>"; };
 		22879E7D26D22C8100682651 /* MockWifiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWifiProvider.swift; sourceTree = "<group>"; };
 		22879E7F26D22D0000682651 /* MockLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		22879E8126D2A82200682651 /* LocationInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				22879E4D26D115ED00682651 /* LocationInfoManaging.swift */,
-				22879E4F26D1190200682651 /* LocationManagerExtension.swift */,
-				22879E7926D2280C00682651 /* LocationPermissionDelegate.swift */,
 				22879E7B26D2282500682651 /* LocationPermissionDelegating.swift */,
+				22879E8126D2A82200682651 /* LocationInfoManager.swift */,
 			);
 			path = LocationPermissionProvider;
 			sourceTree = "<group>";
@@ -286,14 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22879E5026D1190200682651 /* LocationManagerExtension.swift in Sources */,
 				22879E3326D0B46A00682651 /* ViewController.swift in Sources */,
 				22879E6426D1F38F00682651 /* AuthorisedWithSSIDView.swift in Sources */,
 				22879E2F26D0B46A00682651 /* AppDelegate.swift in Sources */,
-				22879E7A26D2280C00682651 /* LocationPermissionDelegate.swift in Sources */,
 				22879E3126D0B46A00682651 /* SceneDelegate.swift in Sources */,
 				22879E4926D1134300682651 /* ViewControllerPresenter.swift in Sources */,
 				22879E7C26D2282500682651 /* LocationPermissionDelegating.swift in Sources */,
+				22879E8226D2A82200682651 /* LocationInfoManager.swift in Sources */,
 				22879E5326D123D600682651 /* LocationPermissionState.swift in Sources */,
 				22879E4E26D115ED00682651 /* LocationInfoManaging.swift in Sources */,
 				22879E4726D0D33300682651 /* WifiInfoProviding.swift in Sources */,

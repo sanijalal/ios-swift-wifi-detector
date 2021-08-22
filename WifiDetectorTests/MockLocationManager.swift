@@ -10,17 +10,11 @@ import CoreLocation
 @testable import WifiDetector
 
 class MockLocationManager: LocationInfoManaging {
-    var delegate: CLLocationManagerDelegate?
+    var delegate: LocationPermissionDelegating?
     var expectedAuthorizationStatus: CLAuthorizationStatus = .notDetermined
     
     func requestWhenInUseAuthorization() {
-        if let delegate = delegate {
-            if #available(iOS 14, *) {
-                delegate.locationManagerDidChangeAuthorization?(CLLocationManager())
-            } else {
-                delegate.locationManager?(CLLocationManager(), didChangeAuthorization: expectedAuthorizationStatus)
-            }
-        }
+        delegate?.permissionStatusReturned(expectedAuthorizationStatus)
     }
 
     func getAuthorizationStatus() -> CLAuthorizationStatus {

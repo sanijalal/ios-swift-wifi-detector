@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 
 protocol LocationInfoManaging {
-    var delegate: CLLocationManagerDelegate? { get set }
+    var delegate: LocationPermissionDelegating? { get set }
     
     func requestWhenInUseAuthorization()
     func getAuthorizationStatus() -> CLAuthorizationStatus

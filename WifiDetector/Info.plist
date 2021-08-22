@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Always and when in use - wifi name</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Always - wifi name</string>
+	<key>NSLocationUsageDescription</key>
+	<string>To get wifi name</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>When in use - wifi name</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -49,6 +57,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresPersistentWiFi</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

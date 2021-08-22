@@ -13,6 +13,18 @@
 		22879E3626D0B46A00682651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22879E3426D0B46A00682651 /* Main.storyboard */; };
 		22879E3826D0B46B00682651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22879E3726D0B46B00682651 /* Assets.xcassets */; };
 		22879E3B26D0B46B00682651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22879E3926D0B46B00682651 /* LaunchScreen.storyboard */; };
+		22879E4526D0D2D000682651 /* WifiInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4426D0D2D000682651 /* WifiInfoProvider.swift */; };
+		22879E4726D0D33300682651 /* WifiInfoProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4626D0D33300682651 /* WifiInfoProviding.swift */; };
+		22879E4926D1134300682651 /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4826D1134300682651 /* ViewControllerPresenter.swift */; };
+		22879E4B26D1136F00682651 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4A26D1136F00682651 /* ViewModel.swift */; };
+		22879E4E26D115ED00682651 /* LocationInfoManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4D26D115ED00682651 /* LocationInfoManaging.swift */; };
+		22879E5026D1190200682651 /* LocationManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E4F26D1190200682651 /* LocationManagerExtension.swift */; };
+		22879E5326D123D600682651 /* LocationPermissionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E5226D123D600682651 /* LocationPermissionState.swift */; };
+		22879E5E26D1E94600682651 /* DeniedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E5D26D1E94600682651 /* DeniedView.xib */; };
+		22879E6026D1EFCB00682651 /* AuthorisedNoSSID.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E5F26D1EFCB00682651 /* AuthorisedNoSSID.xib */; };
+		22879E6226D1F17E00682651 /* AuthorisedWithSSIDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E6126D1F17E00682651 /* AuthorisedWithSSIDView.xib */; };
+		22879E6426D1F38F00682651 /* AuthorisedWithSSIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22879E6326D1F38F00682651 /* AuthorisedWithSSIDView.swift */; };
+		22879E6626D1FD5F00682651 /* UnknownPermissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22879E6526D1FD5F00682651 /* UnknownPermissionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		22879E3726D0B46B00682651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22879E3A26D0B46B00682651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22879E3C26D0B46B00682651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22879E4426D0D2D000682651 /* WifiInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiInfoProvider.swift; sourceTree = "<group>"; };
+		22879E4626D0D33300682651 /* WifiInfoProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiInfoProviding.swift; sourceTree = "<group>"; };
+		22879E4826D1134300682651 /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
+		22879E4A26D1136F00682651 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		22879E4D26D115ED00682651 /* LocationInfoManaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfoManaging.swift; sourceTree = "<group>"; };
+		22879E4F26D1190200682651 /* LocationManagerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerExtension.swift; sourceTree = "<group>"; };
+		22879E5226D123D600682651 /* LocationPermissionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionState.swift; sourceTree = "<group>"; };
+		22879E5D26D1E94600682651 /* DeniedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeniedView.xib; sourceTree = "<group>"; };
+		22879E5F26D1EFCB00682651 /* AuthorisedNoSSID.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorisedNoSSID.xib; sourceTree = "<group>"; };
+		22879E6126D1F17E00682651 /* AuthorisedWithSSIDView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorisedWithSSIDView.xib; sourceTree = "<group>"; };
+		22879E6326D1F38F00682651 /* AuthorisedWithSSIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorisedWithSSIDView.swift; sourceTree = "<group>"; };
+		22879E6526D1FD5F00682651 /* UnknownPermissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnknownPermissionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,59 @@
 		22879E2D26D0B46A00682651 /* WifiDetector */ = {
 			isa = PBXGroup;
 			children = (
+				22879E5126D123A300682651 /* ViewController */,
+				22879E4C26D115CA00682651 /* LocationPermissionProvider */,
+				22879E4326D0D2BD00682651 /* Wifi */,
 				22879E2E26D0B46A00682651 /* AppDelegate.swift */,
 				22879E3026D0B46A00682651 /* SceneDelegate.swift */,
-				22879E3226D0B46A00682651 /* ViewController.swift */,
 				22879E3426D0B46A00682651 /* Main.storyboard */,
 				22879E3726D0B46B00682651 /* Assets.xcassets */,
 				22879E3926D0B46B00682651 /* LaunchScreen.storyboard */,
 				22879E3C26D0B46B00682651 /* Info.plist */,
 			);
 			path = WifiDetector;
+			sourceTree = "<group>";
+		};
+		22879E4326D0D2BD00682651 /* Wifi */ = {
+			isa = PBXGroup;
+			children = (
+				22879E4426D0D2D000682651 /* WifiInfoProvider.swift */,
+				22879E4626D0D33300682651 /* WifiInfoProviding.swift */,
+			);
+			path = Wifi;
+			sourceTree = "<group>";
+		};
+		22879E4C26D115CA00682651 /* LocationPermissionProvider */ = {
+			isa = PBXGroup;
+			children = (
+				22879E4D26D115ED00682651 /* LocationInfoManaging.swift */,
+				22879E4F26D1190200682651 /* LocationManagerExtension.swift */,
+			);
+			path = LocationPermissionProvider;
+			sourceTree = "<group>";
+		};
+		22879E5126D123A300682651 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				22879E5426D1E83E00682651 /* Views */,
+				22879E4A26D1136F00682651 /* ViewModel.swift */,
+				22879E4826D1134300682651 /* ViewControllerPresenter.swift */,
+				22879E3226D0B46A00682651 /* ViewController.swift */,
+				22879E5226D123D600682651 /* LocationPermissionState.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		22879E5426D1E83E00682651 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22879E5D26D1E94600682651 /* DeniedView.xib */,
+				22879E5F26D1EFCB00682651 /* AuthorisedNoSSID.xib */,
+				22879E6126D1F17E00682651 /* AuthorisedWithSSIDView.xib */,
+				22879E6326D1F38F00682651 /* AuthorisedWithSSIDView.swift */,
+				22879E6526D1FD5F00682651 /* UnknownPermissionView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +192,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22879E6226D1F17E00682651 /* AuthorisedWithSSIDView.xib in Resources */,
 				22879E3B26D0B46B00682651 /* LaunchScreen.storyboard in Resources */,
 				22879E3826D0B46B00682651 /* Assets.xcassets in Resources */,
 				22879E3626D0B46A00682651 /* Main.storyboard in Resources */,
+				22879E6626D1FD5F00682651 /* UnknownPermissionView.xib in Resources */,
+				22879E6026D1EFCB00682651 /* AuthorisedNoSSID.xib in Resources */,
+				22879E5E26D1E94600682651 /* DeniedView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +209,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22879E5026D1190200682651 /* LocationManagerExtension.swift in Sources */,
 				22879E3326D0B46A00682651 /* ViewController.swift in Sources */,
+				22879E6426D1F38F00682651 /* AuthorisedWithSSIDView.swift in Sources */,
 				22879E2F26D0B46A00682651 /* AppDelegate.swift in Sources */,
 				22879E3126D0B46A00682651 /* SceneDelegate.swift in Sources */,
+				22879E4926D1134300682651 /* ViewControllerPresenter.swift in Sources */,
+				22879E5326D123D600682651 /* LocationPermissionState.swift in Sources */,
+				22879E4E26D115ED00682651 /* LocationInfoManaging.swift in Sources */,
+				22879E4726D0D33300682651 /* WifiInfoProviding.swift in Sources */,
+				22879E4526D0D2D000682651 /* WifiInfoProvider.swift in Sources */,
+				22879E4B26D1136F00682651 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +366,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WifiDetector/WifiDetector.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WifiDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abdsani.WifiDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanijalal.WifiDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,13 +386,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WifiDetector/WifiDetector.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WifiDetector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abdsani.WifiDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanijalal.WifiDetector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

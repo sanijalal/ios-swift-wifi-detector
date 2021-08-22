@@ -1,0 +1,12 @@
+//
+//  WifiInfoProviding.swift
+//  WifiDetector
+//
+//  Created by Sani on 21/08/2021.
+//
+
+import Foundation
+
+protocol WifiInfoProviding {
+    func getSSID() -> String?
+}

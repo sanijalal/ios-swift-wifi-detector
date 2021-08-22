@@ -12,18 +12,15 @@ class ViewControllerPresenter: NSObject {
     private var viewmodel: ViewModel
     private var wifiInfoProvider: WifiInfoProviding
     private var locationManager: LocationInfoManaging
-    private var locationManagerDelegate: CLLocationManagerDelegate
-    
     private var currentLocationPermissionCallback: (() -> Void)?
     
-    init(wifiInfoProvider: WifiInfoProviding, model: ViewModel = ViewModel(), locationManager: LocationInfoManaging = CLLocationManager(), locationManagerDelegate: CLLocationManagerDelegate = LocationPermissionDelegate()) {
+    init(wifiInfoProvider: WifiInfoProviding, model: ViewModel = ViewModel(), locationManager: LocationInfoManaging = LocationInfoManager()) {
         self.viewmodel = model
         self.wifiInfoProvider = wifiInfoProvider
         self.locationManager = locationManager
-        self.locationManagerDelegate = locationManagerDelegate
         super.init()
-        self.locationManager.delegate = locationManagerDelegate
         self.updateLocationPermissionState(status: locationManager.getAuthorizationStatus())
+        self.locationManager.delegate = self
     }
     
     var labelText: String {
